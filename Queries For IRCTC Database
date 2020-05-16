@@ -1,0 +1,23 @@
+1) Delete from Passenger;
+
+2) Rename Passenger to Passenger_Details;
+
+3) Select * from Train;
+
+4) Select * from Passenger_Details;
+
+5) Select name from Train where order by train_no;
+
+6) Select * from Passenger_Details where >=58;
+
+7) Select name from Train_Route where station_code like ‘M%’;
+
+8) Select * from TRAIN where distance between 200 and 500;
+
+9) UPDATE TRAIN_TICKET_FARE set superfast_charge = 0
+WHERE superfast_charge is NULL;
+
+10) Select name from Passenger_Details where
+Reservation_status=’Wait listed’;
+
+11) Select vase_fare from Train_Ticket_Fare where class=’AC’;
