@@ -21,3 +21,18 @@ WHERE superfast_charge is NULL;
 Reservation_status=’Wait listed’;
 
 11) Select vase_fare from Train_Ticket_Fare where class=’AC’;
+
+12) ALTER TABLE TRAIN ADD CONTRAINT nc CHECK (train_no BETWEEN 10001 AND 99999);
+
+13) ALTER TABLE TICKET ADD CONSTRAINT stu1 UNIQUE(from_station);
+ALTER TABLE TICKET ADD CONSTRAINT stu2 UNIQUE(to_station);
+
+14) ALTER TABLE train_route MODIFY arrival_time date; ALTER TABLE train_route MODIFY depart_time date;
+
+15) ALTER TABLE TRAIN ADD CONTRAINT cl1 CHECK (CLASS IN ('1A', '2A', ' 3A', 'SL', ' C'));
+
+16) ALTER TABLE TICKET ADD CONTRAINT cl2 CHECK (CLASS IN ('1A', '2A', ' 3A', 'SL', ' C'));
+ALTER TABLE TICKET_FARE ADD CONTRAINT cl3 CHECK (CLASS IN ('1A', '2A', ' 3A', 'SL', ' C'));
+
+17) ALTER TABLE TRAIN_ROUTE ALTER COLUMN DISTANCE
+VARCHAR(4) NOT NULL;
