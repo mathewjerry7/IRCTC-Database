@@ -11,6 +11,7 @@ class varchar(30),
 days varchar(30),
 type varchar(30)
 );
+
 CREATE TABLE TICKET(
 PNRNo varchar(10) primary key,
 Transactionid varchar(10),
@@ -21,6 +22,7 @@ class date_of_booking varchar(10),
 total_ticket_fare varchar(10),
 train number varchar(10)
 );
+
 CREATE TABLE PASSENGER(
 PNRNo varchar(10) primary key,
 Serial_no varchar(10),
@@ -28,6 +30,7 @@ Name varchar(10),
 Age varchar(10),
 Reservation_status varchar(10)
 );
+
 CREATE TABLE TRAIN_ROUTE(
 Train_No varchar(30),
 route_no varchar(30),
@@ -39,6 +42,7 @@ distance timestamp,
 day date
 primary key(train_no,route_no)
 );
+
 CREATE TABLE TRAIN_TICKET_FARE(
 Train_No varchar(30) primary key,
 class varchar(30),
@@ -49,6 +53,7 @@ other_charge varchar(10),
 tatkal_charge varchar(10),
 service_tax varchar(10)
 );
+
 Interactive Insertions into the rows and tablesINSERT INTO TRAIN VALUES(
 ‘&train_no’,
 ‘&name’,
@@ -62,6 +67,7 @@ Interactive Insertions into the rows and tablesINSERT INTO TRAIN VALUES(
 ‘&days’,
 ‘&type’
 );
+
 INSERT INTO TICKET VALUES(
 ‘&PNRNo’,
 ‘&Transactionid’,
@@ -73,6 +79,7 @@ INSERT INTO TICKET VALUES(
 ‘&total_ticket_fare’,
 ‘&train number’
 );
+
 INSERT INTO PASSENGER VALUES(
 ‘&PNRNo’,
 ‘&Serial no’,
@@ -80,6 +87,7 @@ INSERT INTO PASSENGER VALUES(
 ‘&Age’,
 ‘&Reservation_status’
 );
+
 INSERT INTO TRAIN_ROUTE VALUES(
 ‘&Train_No’,
 ‘&route_no’,
@@ -90,6 +98,7 @@ INSERT INTO TRAIN_ROUTE VALUES(
 ‘&distance’,
 ‘&day’,
 );
+
 INSERT INTO TRAIN_TICKET_FARE VALUES(
 ‘&Train_No’,
 ‘&class’,
